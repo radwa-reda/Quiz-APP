@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg1.gif);
+}
+
+.container {
+    max-width: 500px !important;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 6;
+}
+
+h2 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+ #input_box_email,#input_box_fname,#input_box_password,#input_box_repassword,#input_box_lname{
+    position: relative;
+}
+#text,#text_fname,#text_password,#text_repassword,#text_lname{
+    display: block;
+    color: #000;
+    font-weight: 300i;
+    font-style: italic;
+    padding: 5px;
+}
+#input_box_fname.valid:before, 
+#input_box_email.valid:before,
+#input_box_password.valid:before,
+#input_box_repassword.valid:before,
+#input_box_lname.valid:before{
+    content: " ";
+    position: absolute;
+    right: 13px;
+    top: 40px;
+    width: 20px;
+    height: 20px;
+    background: url(images/valid.png);
+    background-size: cover;
+    z-index: 200;
+}
+#input_box_fname.invalid:before,
+#input_box_email.invalid:before,
+#input_box_password.invalid:before,
+#input_box_repassword.invalid:before,
+#input_box_lname.invalid:before{
+    content: " ";
+    position: absolute;
+    right: 13px;
+    top: 40px;
+    width: 20px;
+    height: 20px;
+    background: url(images/invalid.png);
+    background-size: cover;
+    z-index: 200;
+}
+label {
+    font-size: medium;
+    margin-bottom: 10px; 
+}
+
+input,
+select {
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.gender-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+
+.gender-icon {
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.pass{
+    position: relative;
+}
+ #passward_img {
+    position: absolute;
+    right: 13px;
+    top: 30px;
+    cursor: pointer;
+    background: none;
+	color: inherit;
+	border: none;
+    z-index: 400;
+}
+#re_passward_img{
+    position: absolute;
+    padding: 0px;
+    right: 2%;
+    cursor: pointer;
+} 
+
+#Error{
+    text-align: center;
+    color: red;
+}
+.custom-confirm-class{
+    background-color: #007BFF !important;
+  z-index: 10000;
+}
